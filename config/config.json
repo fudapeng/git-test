@@ -1,0 +1,332 @@
+{
+    "PATH_URL":"/acareport",
+    "COURSES_ALL_MAP": {
+        "1": "语文",
+        "2": "数学",
+        "3": "英语",
+        "4": "物理",
+        "5": "化学",
+        "6": "生物",
+        "7": "政治",
+        "8": "历史",
+        "9": "地理"
+    },
+    //试卷列表页筛选课程
+    "COURSES": [
+        {
+            "id": "1",
+            "name": "语文"
+        },
+        {
+            "id": "2",
+            "name": "数学"
+        },
+        {
+            "id": "3",
+            "name": "英语"
+        },
+        {
+            "id": "4",
+            "name": "物理"
+        },
+        {
+            "id": "5",
+            "name": "化学"
+        },
+        {
+            "id": "6",
+            "name": "生物"
+        },
+        {
+            "id": "7",
+            "name": "政治"
+        },
+        {
+            "id": "8",
+            "name": "历史"
+        },
+        {
+            "id": "9",
+            "name": "地理"
+        }
+    ],
+    "GRADES": [
+        {
+            "id": "1",
+            "name": "初一"
+        },
+        {
+            "id": "2",
+            "name": "初二"
+        },
+        {
+            "id": "3",
+            "name": "初三"
+        },
+        {
+            "id": "4",
+            "name": "高一"
+        },
+        {
+            "id": "5",
+            "name": "高二"
+        },
+        {
+            "id": "6",
+            "name": "高三"
+        },
+        {
+            "id": "7",
+            "name": "一年级"
+        },
+        {
+            "id": "8",
+            "name": "二年级"
+        },
+        {
+            "id": "9",
+            "name": "三年级"
+        },
+        {
+            "id": "10",
+            "name": "四年级"
+        },
+        {
+            "id": "11",
+            "name": "五年级"
+        },
+        {
+            "id": "12",
+            "name": "六年级"
+        }
+    ],
+    "SCHOOL_STAGE_MAP": {
+        "1": "初中",
+        "2": "高中",
+        "3": "小学"
+    },
+    "STAGE_GRADE_MAP":[
+        {
+            "id": "1",
+            "stageid":"1",
+            "name": "初一"
+        },
+        {
+            "id": "2",
+            "stageid":"1",
+            "name": "初二"
+        },
+        {
+            "id": "3",
+            "stageid":"1",
+            "name": "初三"
+        },
+        {
+            "id": "4",
+            "stageid":"2",
+            "name": "高一"
+        },
+        {
+            "id": "5",
+            "stageid":"2",
+            "name": "高二"
+        },
+        {
+            "id": "6",
+            "stageid":"2",
+            "name": "高三"
+        },
+        {
+            "id": "7",
+            "stageid":"3",
+            "name": "一年级"
+        },
+        {
+            "id": "8",
+            "stageid":"3",
+            "name": "二年级"
+        },
+        {
+            "id": "9",
+            "stageid":"3",
+            "name": "三年级"
+        },
+        {
+            "id": "10",
+            "stageid":"3",
+            "name": "四年级"
+        },
+        {
+            "id": "11",
+            "stageid":"3",
+            "name": "五年级"
+        },
+        {
+            "id": "12",
+            "stageid":"3",
+            "name": "六年级"
+        }
+    ],
+    ///////////////////////角色标志
+    //局长身份
+    "DIRECTOR": 0,
+    //教师身份
+    "TEACHER": 1,
+    //学生与家长
+    "STUDENT_PARENT": 2,
+
+    ////////////////////本地存储key
+    "STORAGE_KEY": {
+        //用户信息key
+        "USER_INFO": "user_info",
+        "CART": "cart",//购物车
+        "MANUAL_PAPER_PREVIEW": "manual_paper_preview",//手动组卷---试卷预览
+        "MANUAL_ASSEMBLY_PAPER": "manual_assembly_paper",//一键组卷----试卷预览
+        "EXAM_LIST": "exam_list", //考试列表-----试卷预览
+        "HOMEWORK_LIST": "homwwork_list", //作业列表----试卷预览
+        "ASSEMBLY_PAPER_DATA_SELF": "assemblyPaperDataSelf",//试卷预览返回到一键组卷原来数据保留
+        "MANAGE_QUESTION_HEAD_INFO": "manage_question_head_info",//出题管理 学段，学科，题目类型 存储数据
+        "HOMEWORK_MANAGWMENT": "homeworkIdSelected" //作业管理
+    },
+    /*试卷预览--数据来源标识*/
+    "PAPER_PREVIEW_SOURCE": {
+        "MANUAL_PAPER": "manual_paper", //手动组卷
+        "ASSEMBLY_PAPER": "assembly_paper",//一键组卷
+        "UNIT_TEST": "unit_test",//单元测试
+        "EXAM_LIST": "exam_list",//考试列表
+        "HOMEWORK_LIST": "homework_list"//作业列表
+    },
+    /*在线出题，试题编辑试题来源*/
+    "EDIT_QUEST_SOURCE": {
+        "UPLOAD_PAPER": 1,//在线出卷，编辑试题页面
+        "PRIVATE_QUEST_LIST": 2//个人出题列表页
+    },
+    /*试卷预览详情页面,试卷来源*/
+    "EXAM_PAPER_DETAIL": {
+        "UNIT_TEST": 0,//试卷预览详情，单元测试
+        "EXAM_PAPER_QUES": 1//试卷选题页面
+    },
+    /*设置权限 用户管理 修改密码*/
+    "SETPERMISSION": {
+        "USER_MANAGE": 0,//用户管理
+        "MODIFY_PASSWORD": 1//修改密码
+    },
+    /*分页主题*/
+    "PAGE_THEME": {
+        "A": "page-theme-a",
+        "B": "page-theme-b"
+    },
+
+
+    /*基础题型对应index*/
+    "BASIC_QUESTION_INDEX": {
+        "SINGLE_OPTION": 1,//单选
+        "MULTI_OPTION": 2,//多选
+        "FILLING_BANK": 3,//填空
+        "JUDGEMENT": 4,//判断
+        "QUESTIONS_ANSWER": 5,//问答
+        "COMPLEX": 6//复合
+    },
+
+    "DEFAULT_COURSE_ID": 2,//默认学科ID
+    "DEFAULT_SCHOOL_STAGE_ID": 2,//默认学段ID
+
+    /////////////////教师角色
+    // //首页menuId
+    //组卷中心
+    MENU_ID_PAPER_CENTER: 1,
+    //出题管理menuId
+    MENU_ID_CREATE_QUESTION: 2,
+    //组卷中心
+    MENU_ID_ASSEMBLY_PAPER_CENTER: 3,
+    //人工组卷
+    MENU_ID_MANUAL_PAPER: 31,
+    //一键组卷
+    MENU_ID_ASSEMBLY_PAPER: 32,
+
+    MENU_ID_CREATE_EXAM_MANAGE: 4,
+    //考试列表
+    MENU_ID_EXAM_LIST: 41,
+    //阅卷中心
+    MENU_ID_VIEW_PAPAER: 42,
+    //条形码
+    MENU_ID_BARCODE: 43,
+    //我的试卷
+    MENU_ID_MY_PAPER: 44,
+    //作业模块
+    MENU_ID_HOMEWORK: 5,
+    //作业列表
+    // MENU_ID_LIST: 51,
+    //学业报告
+    MENU_ID_REPORT: 6,
+
+    //MENU_ID_ASSEMBLY_PAPER: 7,        //设置权限
+
+    MENU_ID_SET_PERMISSION: 8,
+    //身心发展
+    MENU_ID_BODYMIND_DEVELOP: 9,
+    //体质健康
+    MENU_ID_PHYSICAL_HEALTH: 91,
+
+    /////////////////////局长角色
+    //首页menuId
+    MENU_ID_DIR_INDEX: 1,
+    //品德发展menuId
+    MENU_ID_DIR_MORAL_DEVELOP: 2,
+    //学业发展menuId
+    MENU_ID_DIR_STUDY_DEVELOP: 3,
+    //出题管理
+    MENU_ID_DIR_CREATE_QUESTION: 31,
+    //组卷中心(一键组卷)
+    MENU_ID_DIR_CREATE_EXAM_PAPER: 32,
+    //一键组卷
+    MENU_ID_DIR_ASSEMBLY_PAPER: 321,
+    //人工组卷
+    MENU_ID_DIR_MANUAL_PAPER: 322,
+    //我的试卷
+    MENU_ID_DIR_MY_PAPER: 323,
+    //考试管理
+    MENU_ID_DIR_CREATE_EXAM_MANAGE: 33,
+    //考试列表
+    MENU_ID_DIR_EXAM_LIST: 331,
+    //阅卷中心
+    MENU_ID_DIR_VIEW_PAPAER: 332,
+    //条形码
+    MENU_ID_DIR_BARCODE: 333,
+    //作业管理
+    MENU_ID_DIR_HOMEWORK_MANAGE: 34,
+
+    //学业报告
+    MENU_ID_DIR_REPORT: 35,
+    //身心发展
+    MENU_ID_DIR_BODYMIND_DEVELOP: 4,
+    //体质健康
+    MENU_ID_DIR_PHYSICAL_HEALTH: 41,
+    //心理健康
+    MENU_ID_DIR_MENTAL_HEALT: 42,
+
+    //兴趣特长
+    MENU_ID_DIR_HOBBY: 5,
+    //学业负担
+    MENU_ID_DIR_QUALITY: 6,
+    //评价指标管理
+    MENU_ID_DIR_EVAL_INDEX: 7,
+    //问卷调查
+    MENU_ID_DIR_QUESTIONNAIRE: 8,
+    //设置权限
+    MENU_ID_DIR_SET_PERMISSION: 9,
+
+    //没有的图  散点气泡图 和弦图  地图
+    "TRUNK":{
+        "ECHART_LINE":"echarts-trunk-line",
+        "ECHART_BAR":"echarts-trunk-bar",
+        "ECHART_PIE":"echarts-trunk-pie",
+        "ECHART_K":"echarts-trunk-k",
+        "ECHART_RADAR":"echarts-trunk-radar",
+        "ECHART_GAUGE":"echarts-trunk-gauge",//仪表图
+        "ECHART_FUNNEL":"echarts-trunk-funnel",//漏斗图
+        "ECHART_LINE_BAR":"echarts-trunk-line-bar",//折线柱状图
+        "ECHART_MIX":"echarts-trunk-mix"//混合图
+    }
+
+}

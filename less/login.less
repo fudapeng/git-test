@@ -1,0 +1,273 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Microsoft Yahei;
+  height: 100%;
+  background: #F2F4F8;
+  overflow-y: scroll;
+  color: #4C4C4C;
+}
+html {
+  height: 100%;
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: ' ';
+}
+abbr,
+acronym {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+.none {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+/*主内容区宽度*/
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*清除浮动*/
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+*html.clearfix {
+  height: 1%;
+}
+body {
+  overflow: auto;
+}
+#index-main {
+  height: 500px;
+  width: 100%;
+  background-color: #19C99B;
+  position: relative;
+  left: 0px;
+  top: 15%;
+}
+#index-main > .wrapper{
+  background-color: #19C99B;
+  height:100%;
+  margin:0 auto;
+}
+#index-main > .wrapper .wrapper{
+  background: url(../img/login_bg.png) no-repeat;
+  height: 577px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -288px 0 0 -600px;
+}
+#login-box {
+  background: #fff;
+  color: #4C4C4C;
+  position: absolute;
+  top: 95px;
+  right: 60px;
+  padding: 20px 15px;
+  width: 315px;
+  font-size: 14px;
+}
+#login-box > h1 {
+  font-size: 18px;
+}
+#login-box > .tips {
+  margin-top: 10px;
+  background: #FFF7D0;
+  border: 1px solid #FFE675;
+  color: #6A6A6C;
+  padding: 5px 10px;
+  position: relative;
+}
+#login-box > .tips span {
+  margin-left: 26px;
+}
+#login-box > .tips i {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/login-icons.png) -104px -22px no-repeat;
+}
+#login-box > .tips.warning {
+  border: 1px solid #e4393c;
+  color: #e4393c;
+  background: #ffebeb;
+}
+#login-box > .tips.warning i {
+  background-position: -104px -49px;
+}
+#login-box > .input-group {
+  width:315px;
+  position: relative;
+  height: 35px;
+  border: 1px solid #BDBDBD;
+  margin-top: 15px;
+}
+#login-box > .input-group .icon {
+  width: 35px;
+  height: 35px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #BDBDBD;
+}
+#login-box > .input-group .icon.login-name-icon {
+  background: url(../img/login-icons.png) 0 0 no-repeat;
+}
+#login-box > .input-group .icon.password-icon {
+  background: url(../img/login-icons.png) -48px 0 no-repeat;
+}
+#login-box > .input-group input {
+  border: none;
+  height: 35px;
+  width: 277px;
+  display: block;
+  float: left;
+  line-height: 35px;
+  text-indent: 1em;
+  outline: none;
+}
+#login-box > .input-group label {
+  position: absolute;
+  left: 50px;
+  top: 6px;
+  cursor: text;
+  color: #b5b5b6;
+}
+#login-box > .input-group.warning {
+  border: 1px solid #e4393c;
+}
+#login-box > .input-group.warning .icon.login-name-icon {
+  background-position: 0 -96px;
+  border-color: #e4393c;
+}
+#login-box > .input-group.warning .icon.password-icon {
+  background-position: -48px -96px;
+  border-color: #e4393c;
+}
+#login-box > .input-group.focusing {
+  border: 1px solid #3aa2e4;
+}
+#login-box > .input-group.focusing .icon.login-name-icon {
+  background-position: 0 -48px;
+  border-color: #3aa2e4;
+}
+#login-box > .input-group.focusing .icon.password-icon {
+  background-position: -48px -48px;
+  border-color: #3aa2e4;
+}
+#login-box .login-option {
+  line-height: 50px;
+}
+#login-box .login-option input {
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+#login-box .login-option a {
+  float: right;
+  text-align: right;
+  color: #333;
+}
+#login-box .login-submit {
+  width: 100%;
+  height: 35px;
+  display: block;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #E73736;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  cursor: pointer;
+  font-size: 20px;
+}

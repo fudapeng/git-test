@@ -1,0 +1,28 @@
+{
+  "name": "git-test",
+  "version": "0.0.1",
+  "main": "gulpFlie.js",
+  "dependencies": {
+    "del": "*",
+    "gulp": "^3.8.11",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-plumber": "*",
+    "gulp-rev": "*",
+    "gulp-rev-collector": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-watch": "*",
+    "vinyl-named": "*",
+    "vinyl-paths": "*",
+    "webpack": "*",
+    "webpack-stream": "*",
+    "less-loader":"*",
+    "css-loader":"*",
+    "style-loader":"*",
+    "tmodjs-loader":"*",
+    "hson-loader":"*",
+    "exports-loader":"*",
+    "script-loader":"*",
+    "file-loader":"*"
+  }
+}
