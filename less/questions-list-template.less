@@ -1,0 +1,85 @@
+.orange-font{color:#ff7800;font-weight: bold;}
+.question{margin-top:10px;border:1px solid #e6e5e5;line-height:25px;font-size: 14px;}
+.question:hover{border:1px solid #ff7800;}
+.question .body{word-break:break-word;}
+.question > div{padding:10px;}
+.question img{vertical-align:middle;}
+.question .property{padding:5px 10px;line-height:20px;height:20px;color:#898989;}
+.question .property > span{margin-left: 10px;}
+.question .property > span:first-child{margin-left: 0;}
+.question .property .test-builders strong{font-weight:normal;display: inline-block;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;max-width: 218px;vertical-align:middle;}
+
+.question .ques-content{border-top:1px dashed #bcbcbc;border-bottom:1px dashed #bcbcbc;}
+/*垂直显示单选题选项*/
+.question .ques-content .padding-left1{padding-left:19px;}
+.question .ques-content .padding-left1 .margin-left-negative1{margin-left:-19px;}
+/*子题目（1）（2）（3）*/
+.question .ques-content  .padding-left3{padding-left:36px;}
+.question .ques-content  .padding-left3 .margin-left-negative3{margin-left: -36px;}
+.question .handler-btn > button{width:90px;height:30px;margin-left:10px;border:none;outline:none;line-height:30px;text-align:center;background:#3fa46a;color:#fff;font-weight:bold;cursor: pointer;}
+.question .handler-btn > button:first-child{margin-left: 0;margin-right: 10px;}
+.question .handler-btn > button.active{background:#c9caca;color:#3fa46a;}
+/*试题评价，我的评价不一样的地方重写覆盖*/
+.question .handler-btn > dl.evalucate{color:#898989;line-height: 30px;}
+.question dl.evalucate dd{width: 14px;height:14px;margin-top: 2px;margin-right: 5px;}
+.question .handler-btn dl.evalucate dd{cursor: pointer;}
+.question .handler-btn > dl.evalucate dd {margin-top:8px;}
+.question dl.evalucate dd.yes{background: url(../img/evaluate-stars.png) no-repeat;}
+.question dl.evalucate dd.no{background: url(../img/evaluate-stars.png) 0 -59px no-repeat;}
+.question .handler-btn > dl.evalucate dd.yes:hover,
+.question .handler-btn > dl.evalucate dd.no:hover
+{background: url(../img/evaluate-stars.png) 0 -30px no-repeat;}
+/*答案  解析*/
+.question .answer-analysis{border-top:1px solid #e6e5e5;}
+.question .answer-analysis .padding-left2{padding-left:40px;}
+.question .answer-analysis .padding-left2 .margin-left-negative2{margin-left:-40px;}
+
+/*弹出层*/
+#transparent-pop-mask{background:transparent;position:fixed;top:90px;width:100%;height:100%;z-index:99px;}
+#list-loading{position: fixed;left:43%;top:50%;z-index: 100;width:125px;height:60px;line-height:60px;color:#fff;font-size:14px;padding-left:85px;background: url('../img/quan.gif') no-repeat;}
+
+.pop-up .warning{color:#ff9e48;margin-left:10px;}
+.pop-up .btns{text-align: center;}
+.pop-up .btns .green-btn{display:inline-block;padding:0 21px;height:28px;line-height:28px;background:#3fa46a;color:#fff;font-size:14px;}
+/*收藏试题*/
+button{padding:0;margin:0;}
+#pop-collection{position:fixed;left:50%;top:50%;background:#fff;width:618px;font-size:14px;margin-top:-280px;margin-left:-309px;z-index: 101;}
+#pop-collection .msg-content{padding:20px;}
+#pop-collection .msg-content dl{padding-left:80px;overflow:hidden;}
+#pop-collection .msg-content dt{float:left;line-height:30px;margin-left:-80px;width:80px;text-align: right;}
+#pop-collection .msg-content dd{float:left;line-height:30px;margin-bottom:10px;}
+#pop-collection .msg-content dl.selected-label{margin-top:5px;padding-bottom:5px;border-bottom:1px dotted #d5d5d5;}
+#pop-collection .msg-content dl.selected-label dt{line-height:38px;}
+#pop-collection .msg-content dl.selected-label dd ul{float:left;max-height:129px;overflow: auto;}
+#pop-collection .msg-content dl.selected-label dd ul li{float:left;margin:0 15px 15px 0;height:30px;line-height:30px;padding:0 10px;color:#fff;background:#52c884;}
+#pop-collection .msg-content dl.selected-label dd ul li span{float:left;max-width:392px;text-overflow: ellipsis;overflow:hidden;white-space:nowrap;}
+#pop-collection .msg-content dl.selected-label dd ul li i{float:left;font-style:normal;font-size:24px;line-height:27px;margin-left:10px;cursor: pointer;}
+#pop-collection .msg-content dl.new-label{margin:30px 0 20px 0;}
+#pop-collection .msg-content dl.new-label dt{line-height:38px;}
+#pop-collection .msg-content dl.new-label dd  > div{ border:1px solid #c4c4c4;height:38px;}
+#pop-collection .msg-content dl.new-label dd  > div input{float:left;width:426px;height:38px;line-height:38px;padding-left:5px;font-size:14px;outline: none;}
+#pop-collection .msg-content dl.new-label dd  > div button{float:right;font-style:normal;width:38px;height:38px;line-height: 38px;text-indent: -9999px;background:#ff7800 url("../img/white-add.png") center center no-repeat;cursor: pointer;border: none;outline: none;}
+#pop-collection .msg-content dl.new-label dd  > div input{color:#ff7800;border:none;outline: none;}
+#pop-collection .msg-content dl.new-label dd  > p{font-size:14px;color:#9fa0a0;line-height:34px;}
+#pop-collection .msg-content dl.new-label dd  > p.warning{color:#ff9e48;}
+
+#pop-collection .msg-content dl.had-label dd{width:100%;}
+#pop-collection .msg-content dl.had-label dd > ul{max-height:120px;overflow:auto;border:1px solid #c4c4c4;}
+#pop-collection .msg-content dl.had-label dd > ul li{height:30px;line-height:30px;padding-left:10px;}
+#pop-collection .msg-content dl.had-label dd > ul li label{float:left;}
+#pop-collection .msg-content dl.had-label dd > ul li label button{float:left;width:12px;height:12px;text-indent: -10000px;border:1px solid #c9caca;background-color: #fff;vertical-align: middle;margin-right:10px;margin-top:9px;background-color:#f8f8f8;outline: none;}
+#pop-collection .msg-content dl.had-label dd > ul li label span{float:left;max-width:400px;text-overflow: ellipsis;overflow:hidden;white-space: nowrap;}
+#pop-collection .msg-content dl.had-label dd > ul li.active label button{background:url("../img/set-yes.png") 0px 0px no-repeat;border:none;width:15px;margin-right:7px;}
+#pop-collection .btns{padding-top:15px;padding-bottom:20px;text-align:center;}
+#pop-collection .btns button{padding:0 21px;height:28px;line-height:28px;background:#3fa46a;color:#fff;font-size:14px;border:none;outline: none;cursor: pointer;}
+#pop-collection .btns button + button{margin-left: 29px;}
+
+
+/*检索出来的题，table的内联样式都干掉了，前端自己添加，排除掉自己布局时候用的table*/
+.question table td{padding:5px 10px;border:1px solid #ddd;}
+.question table.self-defined td{padding:0;margin:0;border:none;}
+
+/*评分成功*/
+#evalu-success .pop-content{text-align: center;line-height: 120px;}
+#evalu-success .pop-control{text-align: center;padding:10px;}
+#evalu-success .pop-control .green-btn { box-shadow: 2px 2px 3px #eee;height: 20px;line-height: 20px;display: inline-block;background: #3fa46a;padding: 6px 9px;font-size: 14px;color: #fff;}

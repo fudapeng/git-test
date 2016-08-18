@@ -1,0 +1,554 @@
+/*分层教学左侧菜单*/
+{
+    //测试班主任
+    "bd_chapter_manage": [
+        {
+            //成绩明细与目标达成
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            //次级菜单
+            "list": [
+                {
+                    "id": "score-detail-score",
+                    "name": "成绩册",
+                    "weights": 0,
+                    "url": "/html/teacher/level-teacher-results.html"
+                },
+                {
+                    "id": "score-detail-reach",
+                    "name": "目标达成",
+                    "weights": 1,
+                    "url": "/html/teacher/level-goal-attainment.html"
+                }
+            ],
+            //权重
+            "weights": 0,
+            //1是多科显示的权限 2是单科显示的权限 3是两种都有的权限
+            "mulitCourse": 2,
+            //是否拥有二级菜单 1有 0无
+            "haveSec": 1
+        },
+        {
+            "id": "group-explanation",
+            "name": "集体讲解",
+            "weights": 1,
+            "mulitCourse": 2,
+            "url": "/html/diagnosis/teacher/level-teacher-explain.html",
+            "haveSec": 0
+        },
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-analysis-class",
+                    "name": "班级成绩分析",
+                    "weights": 1,
+                    "url": "/diag/teacher/scoreanalysis-danke.html"
+                },
+                {
+                    "id": "deep-analysis-answer",
+                    "name": "学生答题明细",
+                    "weights": 2,
+                    "url": "/diag/teacher/studentanswerdetails.html"
+                },
+                {
+                    "id": "deep-analysis-small-quest",
+                    "name": "小题得分情况",
+                    "weights": 3,
+                    "url": "/diag/teacher/xiaotidefen.html"
+                },
+                {
+                    "id": "deep-analysis-big-quest",
+                    "name": "大题得分情况",
+                    "weights": 4,
+                    "url": "/diag/teacher/datigaikuang.html"
+                }
+                /*{
+                 "id": "deep-analysis-knowledge",
+                 "name": "知识点分析",
+                 "weights": 5,
+                 "url": "/diag/teacher/teacher-knowledge.html"
+                 }*/
+            ]
+        }
+    ],
+    "sa_course_eclassCourseCount": [
+        {
+            //成绩明细与目标达成
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            //次级菜单
+            "list": [
+                {
+                    "id": "score-detail-score",
+                    "name": "成绩册",
+                    "weights": 0,
+                    "url": "/html/teacher/level-teacher-results.html"
+                }
+            ],
+            //权重
+            "weights": 0,
+            //是否拥有二级菜单 1有 0无
+            "haveSec": 1,
+            //1是多科显示的权限 2是单科显示的权限 3是两种都有的权限
+            "mulitCourse": 2
+        }
+    ],
+    "sa_course_courseGoalCount": [
+        {
+            //成绩明细与目标达成
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            //次级菜单
+            "list": [
+                {
+                    "id": "score-detail-reach",
+                    "name": "目标达成",
+                    "weights": 1,
+                    "url": "/html/teacher/level-goal-attainment.html"
+                }
+            ],
+            //权重
+            "weights": 0,
+            //是否拥有二级菜单 1有 0无
+            "haveSec": 1,
+            "mulitCourse": 2
+        }
+    ],
+    "sa_course_subjectAnswerDetail": [
+        {
+            "id": "group-explanation",
+            "name": "集体讲解",
+            "weights": 1,
+            "url": "/html/teacher/level-teacher-explain.html",
+            "haveSec": 0,
+            "mulitCourse": 2
+        }
+    ],
+    "sa_course_courseScoreAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-analysis-class",
+                    "name": "班级成绩分析",
+                    "weights": 1,
+                    "url": "/html/teacher/level-class-score.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_subjectScoreDetail": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-analysis-answer",
+                    "name": "学生答题明细",
+                    "weights": 2,
+                    "url": "/html/teacher/level-student-answer-detail.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_eclassSubjectScoreCount": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-analysis-small-quest",
+                    "name": "小题得分情况",
+                    "weights": 3,
+                    "url": "/html/teacher/level-get-score.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_eclassNodeSubjectScoreCount": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-analysis-big-quest",
+                    "name": "大题得分情况",
+                    "weights": 4,
+                    "url": "/html/teacher/level-big-get-score-overview.html"
+                }
+                //暂时放开
+//                {
+//                 "id": "deep-analysis-knowledge",
+//                 "name": "知识点分析",
+//                 "weights": 5,
+//                 "url": "/diag/teacher/score.html"
+//                 }
+            ]
+        }
+    ],
+    "sa_course_eclassKnowledgePointAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+
+                {
+                    "id": "deep-analysis-knowledge",
+                    "name": "知识点分析",
+                    "weights": 5,
+                    "url": "/html/teacher/level-score.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_eclassCognitiveLevelAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "recognize-report",
+                    "name": "认知层次分析",
+                    "weights": 7,
+                    "url": "/html/teacher/level-recognize-report.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_eclassAbilityAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+
+                {
+                    "id": "deep-analysis-ability",
+                    "name": "能力点分析",
+                    "weights": 6,
+                    "url": "/html/teacher/level-teacher-ability.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_levelAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "deep-layer-count",
+                    "name": "分层统计",
+                    "weights": 8,
+                    "url": "/html/teacher/level-layer-count.html"
+                }
+            ]
+        }
+    ],
+    "sa_course_paperAnalysis": [
+        {
+            "id": "deep-analysis",
+            "name": "深度分析",
+            "weights": 2,
+            "haveSec": 1,
+            "mulitCourse": 2,
+            "list": [
+                {
+                    "id": "question-analysis",
+                    "name": "试题分析",
+                    "weights": 9,
+                    "url": "/html/diagnosis/teacher/question-analysis.html"
+                }
+            ]
+        }
+    ],
+    /*"sa_standardSet": [
+     {
+     "id": "analysis-param",
+     "name": "参数设置与发布",
+     "weights": 5,
+     "list": [
+     {
+     "id": "analysis-param-view",
+     "name": "分析参数查看",
+     "weights": 1,
+     "url": "/html/diagnosis/director/standard-set.html"
+     },
+     {
+     "id": "exam-publish",
+     "name": "考试发布",
+     "weights": 9,
+     "url": "/html/diagnosis/teacher/exam-publish.html"
+     }
+     ],
+     "haveSec": 1,
+     //1是多科显示的权限 2是单科显示的权限 3是两种都有的权限
+     "mulitCourse": 3
+     }
+     ],*/
+    "sa_totalScore_eclassAllCourseDetail": [
+        {
+            "id": "eclass-analysis",
+            "name": "班级总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "score-detail-score-all",
+                    "name": "成绩册",
+                    "weights": 1,
+                    "url": "/diag/teacher/classall-results.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_totalScoreAnalysis": [
+        {
+            "id": "eclass-analysis",
+            "name": "班级总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "score-eclass-analysis",
+                    "name": "班级成绩分析",
+                    "weights": 2,
+                    "url": "/diag/teacher/total-score-analysis.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_totalScoreGoalCount": [
+        {
+            "id": "eclass-analysis",
+            "name": "班级总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "score-detail-reach-all",
+                    "name": "目标达成",
+                    "weights": 3,
+                    "url": "/diag/teacher/eclass_master_reach.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_totalScoreLevelAnalysis": [
+        {
+            "id": "eclass-analysis",
+            "name": "班级总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-score-layer",
+                    "name": "总分分层",
+                    "weights": 4,
+                    "url": "/diag/teacher/total-score-layer.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_eclassQualityAnalysis":[{
+        "id": "eclass-analysis",
+        "name": "班级总体分析",
+        "weights": 0,
+        "list":[
+            {
+                "id": "report-nanjing-teacher",
+                "name": "南京报表",
+                "weights": 5,
+                "url": "/html/diagnosis/teacher/report-nanjing-teacher.html"
+            }
+        ],
+        "haveSec": 1,
+        "mulitCourse": 1
+    }],
+    "sa_totalScore_schoolTotalScore": [
+        {
+            "id": "eclass-analysis",
+            "name": "总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-1",
+                    "name": "各校成绩册",
+                    "weights": 0,
+                    "url": "/html/diagnosis/director/total-score-results.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_schoolTotalScoreAnalysis": [
+        {
+            "id": "eclass-analysis",
+            "name": "总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-2",
+                    "name": "成绩分析",
+                    "weights": 1,
+                    "url": "/html/diagnosis/director/total-score-analysis.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_schoolTotalScoreScatter": [
+        {
+            "id": "eclass-analysis",
+            "name": "总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-3",
+                    "name": "成绩分布",
+                    "weights": 2,
+                    "url": "/html/diagnosis/director/total-score-scatter.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_schoolTotalScoreGoalCount": [
+        {
+            "id": "eclass-analysis",
+            "name": "总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-4",
+                    "name": "目标达成",
+                    "weights": 3,
+                    "url": "/html/diagnosis/director/total-standard-results.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_schoolQualityAnalysis": [
+        {
+            "id": "eclass-analysis",
+            "name": "总体分析",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "total-5",
+                    "name": "南京报表",
+                    "weights": 4,
+                    "url": "/html/diagnosis/director/report-nanjing.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 1
+        }
+    ],
+    "sa_totalScore_schoolCourseScore": [
+        {
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "single-1",
+                    "name": "各校成绩",
+                    "weights": 0,
+                    "url": "/html/diagnosis/director/single-score-results.html" //qk,局长-成绩册
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 2
+        }
+    ],
+    "sa_totalScore_schoolCourseScoreAnalysis": [
+        {
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "single-2",
+                    "name": "成绩分析",
+                    "weights": 1,
+                    "url": "/html/diagnosis/director/single-score-analysis.html" //qk,局长-成绩分析
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 2
+        }
+    ],
+    "sa_totalScore_schoolCourseScoreScatter": [
+        {
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "single-3",
+                    "name": "成绩分布",
+                    "weights": 2,
+                    "url": "/html/diagnosis/director/single-score-scatter.html" //qk,局长-成绩分布
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 2
+        }
+    ],
+    "sa_totalScore_schoolCourseGoalCount": [
+        {
+            "id": "score-detail",
+            "name": "成绩明细与目标达成",
+            "weights": 0,
+            "list": [
+                {
+                    "id": "single-4",
+                    "name": "达标情况",
+                    "weights": 3,
+                    "url": "/html/diagnosis/director/single-standard-results.html"
+                }
+            ],
+            "haveSec": 1,
+            "mulitCourse": 2
+        }
+    ]
+}

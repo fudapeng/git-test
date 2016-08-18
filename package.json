@@ -23,6 +23,7 @@
     "hson-loader":"*",
     "exports-loader":"*",
     "script-loader":"*",
+    "url-loader":"*",
     "file-loader":"*"
   }
 }

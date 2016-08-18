@@ -1,0 +1,140 @@
+{
+  "0": [/*局长菜单*/
+    {
+      "id": 1,
+      "name": "首页",
+      "url": "/diagnosis/public/html/diagnosis/director/index.html"
+    },{
+      "id": 2,
+      "name": "品德发展",
+      "url": "/diagnosis/public/html/moralDevelop/moral-develop.html"
+    },{
+      "id": 3,
+      "name": "学业发展",
+      "className": "has-nav2",
+      "children": [
+        {
+          "id": 32,
+          "name": "组卷中心",
+          "className": "assembly-paper-center",
+          "children": [
+            {
+              "id": 322,
+              "name": "手动组卷",
+              "url": "/diagnosis/public/html/exam/knowledge-point-choose-paper.html"
+            },{
+              "id": 321,
+              "name": "智能组卷",
+              "url": "/diagnosis/public/html/exam/assembly-paper.html"
+            }
+          ]
+        },{
+          "id": 33,
+          "name": "考试管理",
+          "className": "has-nav3",
+          "children": [
+            {
+              "id": 331,
+              "name": "考试列表",
+              "url": "/diagnosis/public/html/exam/exam-list.html"
+            },{
+              "id": 332,
+              "name": "阅卷中心",
+              "url": "/diagnosis/public/html/exam/exam-paper-center.html"
+            },{
+              "id": 333,
+              "name": "条形码",
+              "url": "/diagnosis/public/html/exam/bar-code.html"
+            }
+          ]
+        },{
+          "id": 34,
+          "name": "作业管理",
+          "url": "/diagnosis/public/html/homework/homework-list.html",
+          "className": "homework-list"
+        },{
+          "id": 35,
+          "name": "学业报告",
+          "url": "/acareport/html/director/new-diagnosis-report-list.html"
+        },{
+          "id": 31,
+          "name": "出题管理",
+          "url": "/diagnosis/public/html/exam/set-question-online.html"
+        },{
+          "id":36,
+          "name":"题库管理",
+          "url":"/diagnosis/public/html/exam/dir-quest-manage.html"
+        },{
+          "id": 9,
+          "name": "综合管理",
+          "url": "/diagnosis/public/html/permissionSet/power-set.html"
+        }
+      ]
+    },{
+      "id": 5,
+      "name": "兴趣特长",
+      "url": "/diagnosis/public/html/interest/interest.html"
+    },{
+      "id": 6,
+      "name": "学业负担",
+      "url": "/diagnosis/public/html/burden/burden-index.html"
+    }
+  ],
+  "1": [/*教师菜单*/
+    {
+      "id": 3,
+      "name": "组卷中心",
+      "className": "assembly-paper-center",
+      "children": [
+        {
+          "id": 31,
+          "name": "手动组卷",
+          "url": "/diagnosis/public/html/exam/knowledge-point-choose-paper.html"
+        },{
+          "id": 32,
+          "name": "智能组卷",
+          "url": "/diagnosis/public/html/exam/assembly-paper.html"
+        }
+      ]
+    },{
+      "id": 4,
+      "name": "考试管理",
+      "className": "exam-management",
+      "children": [
+        {
+          "id": 41,
+          "name": "考试列表",
+          "url": "/diagnosis/public/html/exam/exam-list.html"
+        },{
+          "id": 42,
+          "name": "阅卷中心",
+          "url": "/diagnosis/public/html/exam/exam-paper-center.html"
+        },{
+          "id": 43,
+          "name": "条形码",
+          "url": "/diagnosis/public/html/exam/bar-code.html"
+        }
+      ]
+    },{
+      "id": 5,
+      "name": "作业管理",
+      "url": "/diagnosis/public/html/homework/homework-list.html"
+    },{
+      "id": 6,
+      "name": "学业报告",
+      "url": "/acareport/html/teacher/teacher-report-list.html#init"
+    },{
+      "id": 2,
+      "name": "出题管理",
+      "url": "/diagnosis/public/html/exam/set-question-online.html"
+    },{
+      "id":7,
+      "name":"题库管理",
+      "url":"/diagnosis/public/html/exam/quest-manage.html"
+    },{
+      "id": 8,
+      "name": "综合管理",
+      "url": "/diagnosis/public/html/permissionSet/power-set.html"
+    }
+  ]
+}

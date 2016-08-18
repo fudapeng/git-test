@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>综合知识点选题</title>
+    <!-- <link href="./bundle/css/base.css" rel="stylesheet" type="text/css"> -->
+    <link href="../../bundle/css/choose-subject-knowledge.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="wrapper" id="main">
+        <div id="header"></div>
+    </div>
+    <div class="line-solid-x"></div>
+
+    <div id="main-view" class="wrapper clearfix">
+        <ul class="choose-quest-type-btn hidden">
+            <li style="display:none;">
+                <a href="unit-test.html">单元测试</a>
+            </li>
+            <li>
+                <a class="active">综合知识点选题</a>
+            </li>
+            <li>
+                <a href="material-choose-paper.html">同步知识点选题</a>
+            </li>
+            <li>
+                <a href="exam-paper-list.html">试卷选题</a>
+            </li>
+            <li>
+                <a href="quest-collection-list.html">我的收藏</a>
+            </li>
+        </ul>
+        <div id="left-point" class="fl"></div>
+        <div id="cart" class="fr"></div>
+        <div class="wrapper-content">
+            <dl class="selection-condition">
+                <dt><span>题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span><span class="ml5">：</span></dt>
+                <dd>
+                    <ul class="quest-type-condition">
+                        <li><a class="active" href="javascript:void(0);">全部</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selection-condition">
+                <dt><span>难度系数</span><span class="ml5">：</span></dt>
+                <dd>
+                    <ul class="diff-condition">
+                        <li><a data-complexity-up="" data-complexity-down="" class="active" href="javascript:void(0);">全部</a></li>
+                        <li><a data-complexity-up="100" data-complexity-down="86" href="javascript:void(0);">1.00-0.86</a></li>
+                        <li><a data-complexity-up="85" data-complexity-down="71" href="javascript:void(0);">0.85-0.71</a></li>
+                        <li><a data-complexity-up="71" data-complexity-down="56" href="javascript:void(0);">0.70-0.56</a></li>
+                        <li><a data-complexity-up="55" data-complexity-down="41" href="javascript:void(0);">0.55-0.41</a></li>
+                        <li><a data-complexity-up="40" data-complexity-down="26" href="javascript:void(0);">0.40-0.26</a></li>
+                        <li><a data-complexity-up="25" data-complexity-down="0" href="javascript:void(0);">0.25-0.00</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selection-condition" >
+                <dt><span>题库类型</span><span class="ml5">：</span></dt>
+                <dd>
+                    <ul class="db-type" id="database-type">
+                        <!-- 在tpl/data-base/data-base.html中 -->
+                    </ul>
+                </dd>
+            </dl>
+            <div class="key-word-row">
+                <div class="input-border">
+                    <input type="text" placeholder="请输入试题关键词">
+                </div>
+                <div class="search-btn">搜索</div>
+                <div class="reset-btn">重置</div>
+            </div>
+            <div class="clearfix">
+                <div class="fr">
+                    <div id="pages-top"></div>
+                </div>
+            </div>
+            <ul class="quest-sort-btn clearfix">
+                <li><a data-order-by-row-name="" class="active" href="javascript:void(0);">默认排序</a></li>
+                <li><a data-order-by-row-name="complexity" data-esc="1" href="javascript:void(0);">难度系数<img class="vm ml5" src="../../bundle/img/downorderarrow.png"></a></li>
+                <li><a data-order-by-row-name="chosenCount" data-esc="1" href="javascript:void(0);">组卷次数<img class="vm ml5" src="../../bundle/img/downorderarrow.png"></a></li>
+            </ul>
+            <div id="quest-content-list"></div>
+            <div id="pages-bottom"></div>
+        </div>
+    </div>
+
+    <div id="pop-knowledge-change-no-quest-type" class="pop-up p5">
+        <div class="pop-head">
+            <h3 class="pop-title pr">提示</h3>
+        </div>
+        <div class="line-dashed-x"></div>
+        <div class="f14">
+            <div class="pop-content">
+                抱歉，该题型下没有数据，点击确定返回全部题型。
+            </div>
+            <div class="line-dashed-x"></div>
+            <div class="pop-control pop-create">
+                <a href="javascript:;" class="green-btn w100">确定</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../bundle/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../bundle/js/vendor.js"></script>
+    <script type="text/javascript" src="../../bundle/js/choose-subject-knowlodge.js"></script>
+</body>
+</html>

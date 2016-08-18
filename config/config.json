@@ -231,6 +231,21 @@
     "DEFAULT_COURSE_ID": 2,//默认学科ID
     "DEFAULT_SCHOOL_STAGE_ID": 2,//默认学段ID
 
+    IS_SHOW_SCHOOL_DISTRICT:true, //是否显示校级区级题库
+        IS_SHOW_SCHOOL_COEXAM:true, //是否显示校级联考
+
+        DATABASE_TYPE:{                //题库类型
+            PUBLIC:'public',          //公共库
+            PRIVATE:'private',       //个人库
+            DISTRICT:'district',      //区级题库
+            SCHOOL:'school'           //校级题库
+        },
+         WORDEDITORSOURCE:{
+            onlineAssemblyPaper:0,//在线出卷
+            onlineExamPaperPreview:1//在线试卷预览
+        },
+
+
     /////////////////教师角色
     // //首页menuId
     //组卷中心

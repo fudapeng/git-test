@@ -1,0 +1,61 @@
+@import (reference) "./theme.less";
+/****pop up 弹出层****/
+.popUpFun(@width){
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-left:-@width/2;
+    width:@width;
+    z-index:100;
+    background: @font-white;
+    .pop-head{
+         padding-left:15px;
+         height:39px;
+         line-height:39px;
+         position: relative;
+         .pop-title{
+            height: 14px;
+            line-height: 14px;
+            font-weight: bold;
+            color:@font-pop-title;
+            display: inline-block;
+            background: url('/acareport/bundle/img/h3-bg.png') no-repeat;
+            padding-left: 12px;
+            font-size: 14px;
+         }
+         .close-box{
+            position:absolute;
+            right:11px; top:10px;
+            display: inline-block;
+            width:22px; height: 22px;
+            background: url(/acareport/bundle/img/close-box.png) no-repeat 6px 6px;
+            &:hover{
+                background-color:@pop-close-hover-bg;
+            }
+         }
+    }
+    .pop-control{
+        height: 65px;
+        text-align: center;
+        line-height: 65px;
+        .green-btn {
+            box-shadow: 2px 2px 3px #eee;
+            margin-left: 5px;
+            height: 30px;
+            line-height: 30px;
+            width:90px;
+            display: inline-block;
+            background: @main-click-color;
+            padding: 0px 9px;
+            color: #fff;
+        }
+    }
+}
+
+
+
+/* .pop-mask-head{ display:none; position: absolute; left: 0; right: 0; top: 0; height:91px; z-index:99; background-color: #000000; opacity:0.3; filter:alpha(opacity=30);} */
+
+
+

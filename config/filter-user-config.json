@@ -1,0 +1,40 @@
+{
+    //普通老师与校长
+    "course_teacher": {
+        "sa_course_eclassCourseCount": 1,
+        "sa_course_courseGoalCount": 1,
+        "sa_course_subjectAnswerDetail": 1,
+        "sa_course_courseScoreAnalysis": 1,
+        "sa_course_subjectScoreDetail": 1,
+        "sa_course_eclassSubjectScoreCount": 1,
+        "sa_course_eclassNodeSubjectScoreCount": 1,
+        "sa_course_studentComment":1,
+        "sa_course_suggestion":1,
+        "sa_course_targetedPractice": 1,
+        "sa_standardSet": 1,
+        "sa_totalScore_eclassAllCourseDetail": 1,
+        "sa_totalScore_totalScoreAnalysis": 1,
+        "sa_totalScore_totalScoreGoalCount": 1,
+        "sa_totalScore_totalScoreLevelAnalysis": 1,
+        "sa_course_eclassKnowledgePointAnalysis": 1,
+        "sa_course_eclassAbilityAnalysis": 1,
+        "sa_course_eclassCognitiveLevelAnalysis": 1,
+        "sa_course_levelAnalysis": 1,
+        "sa_eclassQualityAnalysis": 1,
+        "sa_course_paperAnalysis": 1
+    },
+    //局长
+    "secretary": {
+        "sa_totalScore_schoolTotalScore": 1,
+        "sa_totalScore_schoolTotalScoreScatter": 1,
+        "sa_totalScore_schoolTotalScoreAnalysis": 1,
+        "sa_totalScore_schoolTotalScoreGoalCount": 1,
+        "sa_totalScore_schoolCourseScore": 1,
+        "sa_totalScore_schoolCourseScoreAnalysis": 1,
+        "sa_totalScore_schoolCourseScoreScatter": 1,
+        "sa_totalScore_schoolCourseGoalCount": 1,
+        "sa_standardSet": 1,
+        "sa_schoolQualityAnalysis": 1
+    }
+
+}
