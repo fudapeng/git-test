@@ -9,7 +9,10 @@ var eUrl = require('url/exam-url');
 var bdUrl = require('url/base-data-url');
 
 //less
-require('../../less/create-exam-pop');
+require('../../less/create-exam-pop.less');
+//tpl
+var createExamTpl = require('common/create-exam-pop.tpl');
+var checkItemTpl = require('common/check-item');
 
 var EXAM_LEVEL = {
         UNIT: 2,//单元测试
@@ -53,7 +56,7 @@ var EXAM_LEVEL = {
                 return;
             }
             isInit = true;//只初始化一次
-            $('body').append(template('common/create-exam-pop/create-exam-pop'));//在body尾部添加html标签
+            $('body').append(createExamTpl());//在body尾部添加html标签
             $pop = $("#create-exam-pop");//id自己写在当前页面
             if (!$('.pop-mask')[0]) {
                 $('body').append('<div class="pop-mask"></div>');
@@ -161,7 +164,7 @@ var EXAM_LEVEL = {
                 $pop.find('.eclass-row dd:eq(1)').hide();
             }else{
                 $pop.find('.eclass-row dd:eq(0)').hide();
-                $pop.find('.eclass-row dd:eq(1)').show().html(template('common/create-exam-pop/check-item',{
+                $pop.find('.eclass-row dd:eq(1)').show().html(checkItemTpl({
                     isDisable:false,
                     list:data.results,
                     name:'eclass'
@@ -213,7 +216,7 @@ var EXAM_LEVEL = {
                 list:list,
                 name:'course'
             };
-            $pop.find('.course-row').find('.checkboxs').html(template('common/create-exam-pop/check-item',data));
+            $pop.find('.course-row').find('.checkboxs').html(checkItemTpl(data));
         },
         eclassDataChange: function(flag,grade){
             var self = this;

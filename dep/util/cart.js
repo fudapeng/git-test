@@ -7,6 +7,7 @@ var Constant = require('config');
 var store = require('store');
 var scUrl = require('url/score-count-url');
 var examPop = require('util/create-exam-pop');
+var userFn = require('user-info/index');
 // var createHWPop = require('util/score-count-url');
 //css
 require('../../less/my-paper-cart');
@@ -117,7 +118,7 @@ var _templateId,
 			$("#create-exam").click(function(){
 				var storeCart = store.get(Constant.STORAGE_KEY.CART);
 				if(!storeCart.generatePaper || !storeCart.generatePaper.examPaperId){
-					userInfo(function(data){
+					userFn(function(data){
 						var examPopType;
 						if(data.type != '0'){
 							//校级账号
