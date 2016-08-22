@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上传</title>
+	<style type="text/css">
+		*{
+                margin: 0px;
+                padding: 0px;
+            }
+            .filePicker{
+                width: 160px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                color: #fff;
+                background: #00b7ee;
+            }
+            .filePicker input[type="file"] {
+                position: relative;
+                top: -44px;
+                left: 0px;
+                width: 160px;
+                height: 44px;
+                opacity: 0;
+                cursor: pointer;
+                overflow: hidden;
+                z-index: 0;
+            }
+
+            .container{
+                width: 160px;
+                margin: 30px auto;
+            }
+	</style>
+</head>
+<body>
+	<div class="container">3
+		<div class="filePicker">
+			<label>上传</label>
+			<input type="file" id="fileInput" name=file multiple='multiple' accept="image/*">
+		</div>
+	</div>
+	<div class="showImg"></div>
+
+	<script type='text/javascript'>
+		(function(){
+			var fileInput = document.getElementById("fileInput")
+			fileInput.addEventListener('change',function (event) {
+				console.log(fileInput.files);
+				var file = fileInput.files[0];
+				if (file) {
+					var reader = new FileReader();
+					var img = document.createElement("img");
+					img.src = window.URL.createObjectURL(file);
+			        reader.onload = function(evt) {
+			        	// console.log(this.result)
+			            // xhr.send(evt.target.result);
+			            // img.src = this.result;
+			        };
+			        document.getElementsByClassName("showImg")[0].appendChild(img);
+			        reader.readAsBinaryString(file);
+
+				};
+			})
+		})()
+	</script>
+
+</body>
+</html>
