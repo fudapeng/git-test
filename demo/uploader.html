@@ -5,43 +5,84 @@
 	<title>上传</title>
 	<style type="text/css">
 		*{
-                margin: 0px;
-                padding: 0px;
-            }
-            .filePicker{
-                width: 160px;
-                height: 44px;
-                line-height: 44px;
-                text-align: center;
-                color: #fff;
-                background: #00b7ee;
-            }
-            .filePicker input[type="file"] {
-                position: relative;
-                top: -44px;
-                left: 0px;
-                width: 160px;
-                height: 44px;
-                opacity: 0;
-                cursor: pointer;
-                overflow: hidden;
-                z-index: 0;
-            }
-
-            .container{
-                width: 160px;
-                margin: 30px auto;
-            }
+            margin: 0px;
+            padding: 0px;
+        }
+        .filePicker{
+            width: 160px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: #fff;
+            background: #00b7ee;
+        }
+        .filePicker input[type="file"] {
+            position: relative;
+            top: -44px;
+            left: 0px;
+            width: 160px;
+            height: 44px;
+            opacity: 0;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .container{
+            width: 160px;
+            margin: 30px auto;
+        }
+        /* 表单 */
+        .form-control {
+        	margin: 20px auto;
+		    display: block;
+		    width: 300px;
+		    height: 34px;
+		    padding: 6px 12px;
+		    font-size: 14px;
+		    line-height: 1.42857143;
+		    color: #555;
+		    background-color: #fff;
+		    background-image: none;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		}
+		.btn{
+		color: #fff;
+		background-color: #001d78;
+        display: block;
+	    padding: 6px 12px;
+	    margin: 0 auto;
+	    font-size: 14px;
+	    font-weight: 400;
+	    line-height: 1.42857143;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    border-radius: 4px;
+		}
 	</style>
 </head>
 <body>
-	<div class="container">3
+	<div class="formDiv">
+		<form action="http://127.0.0.1:3000/test-post" method="post">
+			<input type="text" class="form-control" name="name"/ placeholder="账号"> <br>
+			<input type="password" class="form-control" name="paw" placeholder="密码"> <br>
+			<input type="submit" class="btn" value="提交"><img src="./logo.png" alt="">
+		</form>
+	</div>
+	<div class="container">
 		<div class="filePicker">
+			<form action="http://127.0.0.1:3000/test-upload" method="post" enctype="multipart/form-data">
 			<label>上传</label>
-			<input type="file" id="fileInput" name=file multiple='multiple' accept="image/*">
+			<input type="file" id="fileInput" name="file" multiple='multiple' accept="image/*" >
+			<input type="submit" class="btn" value="上传">
+			</form>
 		</div>
 	</div>
 	<div class="showImg"></div>
+
 
 	<script type='text/javascript'>
 		(function(){
@@ -59,8 +100,7 @@
 			            // img.src = this.result;
 			        };
 			        document.getElementsByClassName("showImg")[0].appendChild(img);
-			        reader.readAsBinaryString(file);
-
+			        // reader.readAsBinaryString(file);
 				};
 			})
 		})()

@@ -24,6 +24,11 @@
     "exports-loader":"*",
     "script-loader":"*",
     "url-loader":"*",
-    "file-loader":"*"
+    "file-loader":"*",
+
+    "express":"*",
+    "multer":"*",
+    "body-parser":"*",
+    "cookie-parser":"*"
   }
 }
